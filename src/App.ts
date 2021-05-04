@@ -9,7 +9,7 @@ const bot = new Client({
 
 bot.on('message', (msg: any) => {
     console.log(msg.content)
-    if (msg.content.toLowerCase().startsWith('hi')) return msg.conversation.sendMessage(`Hi ${msg.author.id}`)
+    if (msg.content.toLowerCase().startsWith('neko')) return msg.conversation.sendMessage(`Hi ${msg.author.id}`)
     if (msg.content.startsWith('!ev')) eval(msg.content.replace('!ev', ''))
 })
 
